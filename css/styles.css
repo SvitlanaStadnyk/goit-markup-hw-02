@@ -3,13 +3,16 @@
 --secondary-text-color: #757575;
 --main-text-color: #212121;
 --accent-text-color: #2196F3;
---main-background-color: #FFFFFF;
+--white-color: #FFFFFF;
 --main-btn-color:#F5F4FA;
+--dark-grey-color:#2F303A;
+--black-color:#000000;
 }
 
 body {
 background-color: var(--main-background-color);
-color: var(--main-text-color);}
+color: var(--main-text-color);
+font-family: "Roboto"; sans-serif;}
 
 .list {
   list-style: none;
@@ -20,16 +23,17 @@ color: var(--main-text-color);}
 }
 .btn {
   font-family: inherit;
+  border: none;
+  cursor: pointer; 
 }
   
 
 /* top-line */
 
 .top {
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
 }
 .top-nav {
-font-family: "Roboto"; sans-serif;
 font-weight: 600;
 font-size: 14px;
 line-heght: 1.14;
@@ -37,7 +41,7 @@ letter-spacing: 0.02em;
 }
 .top-logo {
 font-family: "Raleway"; sans-serif;
-color: #000000;
+color: var(--black-color);
 font-weight: 700px;
 font-size: 26px;
 line-height: 1.19;
@@ -49,17 +53,17 @@ color: var(--accent-color);
 }
 
 .top-accent {
-    color: var(--accent-color)}
+color: var(--accent-color)}
 .top-link {
 font-style: normal;
 color: var(--main-text-color);
  
 }
 .current {
-    color: var(--accent-text-color);
+color: var(--accent-text-color);
 }
 .top-mail {
-    color: var(--accent-text-color);}
+color: var(--accent-text-color);}
 
 .top-mail:hover,
 .top-mail:focus {
@@ -67,52 +71,47 @@ color: var(--accent-text-color);
 }
    
 .top-tel {
-    color: var(--secondary-text-color)
+color: var(--secondary-text-color);
 }
 .top-contacts {
-font-family: "Roboto"; sans-serif;
 font-weight: 600;
 font-size: 14px;
 line-heght: 1.14;
 letter-spacing: 0.02em;
 }
 
+
+/*index*/
 .header {
-    background-color: #2F303A;
+background-color: var(--dark-grey-color);
 }
 .header-title {
-font-family: "Roboto"; sans-serif;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 letter-spacing: 0.06em;
-color: #FFFFFF;
-background-color: #2F303A;
+color: var(--white-color);
+background-color: var(--dark-grey-color);
 }
 
-.header-btn {
-font-family: "Roboto"; sans-serif;
+.header-btn:hover, .header-btn:focus
+{
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.06em;
-color: #FFFFFF;
+color: var(--white-color);
 background-color: var(--accent-color);
 }
 
-
 .features {
-    background-color: var(--main-background-color);
+background-color: var(--main-background-color);
 }
 .visually-hidden {
-    color: var(--main-background-color);
+color: var(--main-background-color);
 }
-.features-list {
-}
-.features-item {
-}
+
 .features-title {
-font-family: "Roboto"; sans-serif;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -121,7 +120,6 @@ color: var(--main-text-color-);
 
 }
 .features-text {
-font-family: "Roboto"; sans-serif;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -133,7 +131,6 @@ color: var(--secondary-text-color-);
 background-color: var(--main-background-color);
 }
 .about-title {
-font-family: "Roboto"; sans-serif;
 font-weight: 700;
 font-size: 42px;
 line-height: 1.16;
@@ -142,10 +139,9 @@ color: var(--main-text-color-);
 }
 
 .team {
-  background-color: var(--main-btn-color);  
+background-color: var(--main-btn-color);  
 }
 .team-title {
-font-family: "Roboto"; sans-serif;
 font-weight: 700;
 font-size: 42px;
 line-height: 1.16;
@@ -154,11 +150,10 @@ color: var(--main-text-color-);
 }
 
 .team-item {
-background-color: #FFFFFF;
+background-color: var(--white-color);
 }
 
 .team-name {
-font-family: "Roboto"; sans-serif;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
@@ -167,95 +162,110 @@ color: var(--main-text-color-);
 }
 
 .team-description {
-font-family: "Roboto"; sans-serif;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.19;
-letter-spacing: 0.03;
+letter-spacing: 0.03em;
 color: var(--secondary-text-color-);
 }
-
-
+/*footer*/
 .address {
-background-color: #2F303A;
-font-family: "Raleway"; sans-serif;
+background-color: var(--dark-grey-color);
+color: var(--white-color);
 letter-spacing: 0.03em;
 }
 .address-link {
 font-style: normal;
-color: var(--main-background-color);
+color: var(--white-color);
 }
 .address-logo {
+font-family: "Raleway"; sans-serif;
 font-style: 700;
 font-size: 26px;
 line-height: 1.19;
 }
 .address-logo-part {
-color: var(--accent-text-color)
+font-family: "Raleway"; sans-serif;
+color: var(--accent-text-color);
 }
 .address-list {
+color: var(--white-color);
+font-weight: 400;
+font-size:14px;
+Line-height: 1.71;
+letter-spacing: 0.03em;
+font-style:normal;
 }
-.address-item {
-}
+
 .mail-link {
+color: rgba(255, 255, 255, 0.6);
+font-style: normal;
 }
 .tel-link {
+color: rgba(255, 255, 255, 0.6);
+font-style: normal;
 }
-.top {
-}
-.top-nav {
-}
-.top-link {
-}
-.link {
-}
-.current {
-}
-.top-logo-part {
-}
-.top-list {
-}
-.list {
-}
-.top-item {
-}
-.top-contacts {
-}
+
+/*portfolio*/
 .filters {
+background-color: var(--white-color);
+color: var(--main-text-color);
+font-weight: 600;
+font-size: 16px;
+line-height: 1.62;
+letter-spacing: 0.03em;
+
 }
-.filters-list {
-}
-.filters-item {
-}
+
 .filters-main-btn {
+color: var(--white-color);
+background-color: var(--accent-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+letter-spacing: 0.03em;
 }
-.btn {
-}
+
 .filters-btn {
+background-color: var(--main-btn-color);
+color: var(--main-text-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+letter-spacing: 0.03em;
 }
-.project-list {
+
+.project-link.link {
+text-decoration: none;
 }
-.project-item {
-}
-.project-link {
-}
+
 .project-title {
+color: var(--main-text-color);
+font-style: 700;
+Font-size: 18px;
+line-height: 2;
+Letter-spacing: 0.06em;
 }
+
 .project-description {
+color: var(--secondary-text-color);
+font-style: 400;
+Font-size: 16px;
+line-height: 1.87;
+Letter-spacing: 0.03em;
 }
-.description {
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
-.address {
-}
-.address-link {
-}
-.address-logo-part {
-}
-.address-list {
-}
-.address-item {
-}
-.mail-link {
-}
-.tel-link {
-}
+
+
