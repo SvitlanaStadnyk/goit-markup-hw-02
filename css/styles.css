@@ -286,8 +286,8 @@ body {
 }
 
 .filters-main-btn {
-  color: var(--white-color);
-  background-color: var(--accent-color);
+  color: var(--main-text-color);
+  background-color: var(--main-btn-color);
 }
 
 .filters-btn {
